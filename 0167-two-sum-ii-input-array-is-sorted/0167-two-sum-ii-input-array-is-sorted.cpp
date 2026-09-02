@@ -9,7 +9,7 @@ public:
 
             }else if(numbers[left]+numbers[right]>target){
                 right--;
-            }else if(numbers[left]+numbers[right]<target){
+            }else{
                 left++;
             }
 
