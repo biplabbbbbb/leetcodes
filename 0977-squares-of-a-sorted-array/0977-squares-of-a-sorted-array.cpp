@@ -5,8 +5,6 @@ public:
         int left = 0;
         int right = nums.size()-1;
         int index = nums.size()-1;
-        // int val1 = 0;
-        // int val2 = 0;
         while(left<=right){
             if(abs(nums[left])>abs(nums[right])){
                 ans[index] = nums[left]*nums[left];
