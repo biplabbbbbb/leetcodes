@@ -5,16 +5,14 @@ public:
         int left = 0;
         int right = nums.size()-1;
         int index = nums.size()-1;
-        int val1 = 0;
-        int val2 = 0;
+        // int val1 = 0;
+        // int val2 = 0;
         while(left<=right){
-            val1=nums[left]*nums[left];
-            val2=nums[right]*nums[right];
-            if(val1>val2){
-                ans[index] = val1;
+            if(abs(nums[left])>abs(nums[right])){
+                ans[index] = nums[left]*nums[left];
                 left++;
             }else{
-                ans[index]=val2;
+                ans[index]=nums[right]*nums[right];
                 right--;
             }
             index--;
