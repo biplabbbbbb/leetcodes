@@ -6,6 +6,8 @@ public:
             if(nums[i] != nums[i-1]){
                 nums[slow] = nums[i];
                 slow++;
+            }else if(nums.empty()){
+                return 0;
             }
         }
         return slow;
